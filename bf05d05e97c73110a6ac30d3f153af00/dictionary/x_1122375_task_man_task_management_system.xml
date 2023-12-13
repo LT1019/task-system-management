@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b5d71812970b3110a6ac30d3f153af5d" extends="task" label="Task Management System" max_length="40" name="x_1122375_task_man_task_management_system" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Actual End" max_length="40" name="actual_end" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Actual Start" max_length="40" name="actual_start" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Number Prefix" max_length="40" name="number_prefix" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Planned End" max_length="40" name="planned_end" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Planned Start" max_length="40" name="planned_start" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Project Name" max_length="100" name="project_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Remarks" max_length="5000" name="remarks" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Task Name" max_length="100" name="task_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Task State" max_length="40" name="task_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Cancelled" value="cancelled"/>
+                <element inactive_on_update="false" label="Completed" value="completed"/>
+                <element inactive_on_update="false" label="For Review" value="for_review"/>
+                <element inactive_on_update="false" label="In-Progress" value="in_progress"/>
+                <element inactive_on_update="false" label="New" value="new"/>
+                <element inactive_on_update="false" label="On-Hold" value="on_hold"/>
+            </choice>
+        </element>
+    </element>
+</database>
